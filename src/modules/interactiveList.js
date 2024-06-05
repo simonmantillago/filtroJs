@@ -14,7 +14,20 @@ export class ApiDataList extends LitElement {
         this.data = [];
         this.details = null;
     }
-
+    
+    render() {
+        return html`
+            <div class="container">
+                <button @click="${this.fetchData}">Actualizar Datos</button>
+                <div id="list-container">
+                    ${this.renderList()}
+                </div>
+                <div id="details-container" class="details">
+                    ${this.renderDetails()}
+                </div>
+            </div>
+        `;
+    }
     connectedCallback() {
         super.connectedCallback();
         this.fetchData();
@@ -60,19 +73,6 @@ export class ApiDataList extends LitElement {
         `;
     }
 
-    render() {
-        return html`
-            <div class="container">
-                <button @click="${this.fetchData}">Actualizar Datos</button>
-                <div id="list-container">
-                    ${this.renderList()}
-                </div>
-                <div id="details-container" class="details">
-                    ${this.renderDetails()}
-                </div>
-            </div>
-        `;
-    }
 }
 
 customElements.define('api-data-list', ApiDataList);
