@@ -14,4 +14,4 @@ La ayudita ya tenia todo solo añadi la funcion para borrar porque no me servia 
 
 Ejercico lista interactiva:
 
-Cambie el render por un mapeo como lo realice en el proyecto y use propiedades de lit para los eventos y modifique la forma en la que se renderizan los datos de cada quien 
+Cambie el render por un mapeo como lo realice en el proyecto y use propiedades de lit para los eventos y modifique la forma en la que se renderizan los datos de cada quien poniendo una variable que permite manejar que dato quiero ver usando el mapeo que hice antes poniendo la funcion click

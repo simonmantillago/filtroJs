@@ -23,7 +23,7 @@ export class ApiDataList extends LitElement {
                     ${this.renderList()}
                 </div>
                 <div id="details-container" class="details">
-                    ${this.renderDetails()}
+                    ${this.renderDetailsCheck()}
                 </div>
             </div>
         `;
@@ -59,7 +59,7 @@ export class ApiDataList extends LitElement {
         this.requestUpdate();
     }
 
-    renderDetails() {
+    renderDetailsCheck() {
         if (!this.details) {
             return html``;
         }
